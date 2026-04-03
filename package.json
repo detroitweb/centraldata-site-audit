@@ -1,0 +1,15 @@
+{
+  "name": "qa-cypress-lab",
+  "version": "1.0.0",
+  "description": "Cypress visual snapshot tests for CentralData.com",
+  "scripts": {
+    "test": "cypress run",
+    "test:headed": "cypress open",
+    "test:update": "rm -rf cypress-image-diff-screenshots/baseline && cypress run",
+    "test:ci": "cypress run --browser chrome --headless"
+  },
+  "devDependencies": {
+    "cypress": "^15.13.0",
+    "cypress-image-diff-js": "^2.0.0"
+  }
+}
